@@ -4,26 +4,26 @@ A hands-on DevOps project demonstrating the infrastructure deployment, multi-AZ 
 
 ---
 
-## 📐 Architecture Overview
+**```## 📐 Architecture Overview**
 
-[ Client (pgAdmin 4 / psql) ]
+**```[ Client (pgAdmin 4 / psql) ]**
              │
-             │ TCP Port 5432 (SSL/TLS Required)
+           **```  │ TCP Port 5432 (SSL/TLS Required)**
              ▼
-     [ Internet Gateway ]
-             │
-             ▼
-      [ VPC Route Table ] (0.0.0.0/0 -> igw-xxxx)
+     **```[ Internet Gateway ]**
              │
              ▼
-    [ Public Subnet Group ] (us-east-1a / us-east-1b)
+      **```[ VPC Route Table ] (0.0.0.0/0 -> igw-xxxx)**
              │
              ▼
-   [ Security Group (sg-xxxx) ]
-    └─ Inbound Rule: PostgreSQL (5432) from Allowed IP /32
+    **```[ Public Subnet Group ] (us-east-1a / us-east-1b)**
              │
              ▼
-   [ Amazon RDS PostgreSQL Instance ]
+   **```[ Security Group (sg-xxxx) ]**
+  **```  └─ Inbound Rule: PostgreSQL (5432) from Allowed IP /32**
+             │
+             ▼
+   **```[ Amazon RDS PostgreSQL Instance ]
 
 
 ### Tech Stack
