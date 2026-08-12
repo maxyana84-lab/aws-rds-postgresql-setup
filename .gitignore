@@ -1,0 +1,11 @@
+
+.env
+*.env
+credentials.json
+secrets/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
